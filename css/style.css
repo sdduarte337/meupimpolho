@@ -93,9 +93,10 @@ nav > a:hover {
 }
 
 #box-banner > img {
+    display: flex;
     position: absolute;
-    width: 100%;
 }
+
 
 #efeito-banner {
     position: absolute;
