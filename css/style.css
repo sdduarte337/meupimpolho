@@ -290,8 +290,8 @@ ul#lista-galeria {
 li.foto-galeria {
     
     margin: 10px;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     list-style: none;
     border-style: solid;
     border-color: #F2D5C4;   
@@ -317,7 +317,7 @@ li.foto-galeria:hover {
     background-color: #022859;
     padding: 10px;   
     width: 100%;
-    overflow: hidden;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: flex;
     color: white;
@@ -327,17 +327,25 @@ li.foto-galeria:hover {
     margin: auto;
 }
 
-#icon-link, #icon-copy, #icon-contato {
-    width: 33.33%; /* Largura igual de 33.33% para cada div */
-    float: left; /* Flutuar cada div para a esquerda */
-    box-sizing: border-box; /* Incluir o preenchimento e a borda na largura e altura da div */
+.icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.452);
+}
+
+#icon-link {
+    margin: 15px;
+    text-align: left;
 }
 
 #icon-copy {
+    margin: 15px;   
     text-align: center;
 }
 
 #icon-contato {
+    margin: 15px;    
     text-align: right;
 }
   
